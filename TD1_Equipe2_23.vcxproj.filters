@@ -56,5 +56,8 @@
     <ClInclude Include="exo4.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="exo5.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

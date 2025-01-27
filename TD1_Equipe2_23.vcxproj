@@ -141,6 +141,7 @@
     <ClInclude Include="exo2.hpp" />
     <ClInclude Include="exo3.hpp" />
     <ClInclude Include="exo4.hpp" />
+    <ClInclude Include="exo5.hpp" />
     <ClInclude Include="verifierValeur.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
