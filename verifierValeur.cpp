@@ -1,0 +1,15 @@
+#include <iostream>
+
+void verificationValeur(float& valeur, float min, float max) {
+	while (valeur > max || valeur < min) {
+		std::cout << "La valeur doit etre entre " << min << " et " << max << "." << std::endl;
+		std::cout << "Veuillez entrer une valeur respectant les conditions : ";
+		std::cin >> valeur;
+	}
+}
+
+void getValue(std::string message, float& value, float min, float max) {
+	std::cout << message;
+	std::cin >> value;
+	verificationValeur(value, min, max);
+}

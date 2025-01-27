@@ -127,7 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="exo1.cpp" />
+    <ClCompile Include="exo2.cpp" />
+    <ClCompile Include="exo3.cpp" />
+    <ClCompile Include="exo4.cpp" />
+    <ClCompile Include="exo5.cpp" />
+    <ClCompile Include="exo6.cpp" />
     <ClCompile Include="TD1_Equipe2_23.cpp" />
+    <ClCompile Include="verifierValeur.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exo1.hpp" />
+    <ClInclude Include="exo2.hpp" />
+    <ClInclude Include="exo3.hpp" />
+    <ClInclude Include="exo4.hpp" />
+    <ClInclude Include="verifierValeur.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
