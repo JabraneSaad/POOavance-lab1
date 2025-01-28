@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <random>
+#include <iomanip>
 
 // TODO: faire une fonction qui genere un point x et y entre -1 et 1
 float genererNombre() {
@@ -33,7 +34,6 @@ void approximationPi() {
 		}
 	}
 	double pi = 4.0 * static_cast<double>(nPointsDansCercle) / nIterations;
-	std::cout << std::fixed;
-	std::cout.precision(6);
-	std::cout <<  pi;
+	std::cout << std::fixed << std::setprecision(6);
+	std::cout << pi;
 }

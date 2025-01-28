@@ -1,4 +1,5 @@
+#include <string>
 #ifndef EXO6_HPP
 #define EXO6_HPP
-void dictionnaire();
+void dictionnaire(std::string filePath);
 #endif 
