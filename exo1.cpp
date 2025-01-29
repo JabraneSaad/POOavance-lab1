@@ -1,3 +1,11 @@
+/*
+Auteurs : Vincent Brunette, Saad Jabrane
+Date : 29 Janvier 2025
+Description du programme :
+	Écrivez un programme qui lit du clavier un nombre entier, puis détermine si ce
+	nombre est premier ou non
+*/
+
 #include <iostream>
 #include <cmath>
 

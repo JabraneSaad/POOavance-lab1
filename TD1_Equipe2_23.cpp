@@ -7,7 +7,14 @@
 #include "exo5.hpp"
 #include "exo6.hpp"
 
+
 int main() {
-	approximationPi();
+	int tableau[10] = { 7, 4, 7, 8, 4, 6, 3, 9, 6, 11 };
+
+	//nombrePremier();
+	emprunt();
+	
+	//tableauPairImpair(tableau);
+
 	return 1;
 }
