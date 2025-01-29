@@ -4,12 +4,30 @@
 #include <sstream>
 
 const std::string filePath = "dictionnaire.txt";
+const int N_MAX_ENTREE_DIC = 100;
 
 struct EntreeDictionnaire {
 	std::string mot;
 	std::string natureGenre;
 	std::string definition;
 };
+
+void afficherMotDefMot(EntreeDictionnaire defMot) {
+	std::cout << "Mot: " << defMot.mot << std::endl;
+	std::cout << "Nature/Genre: " << defMot.natureGenre << std::endl;
+	std::cout << "Definition: " << defMot.definition << std::endl;
+	std::cout << "-----------------------------------------" << std::endl;
+}
+
+EntreeDictionnaire trouverMotPlusLong(EntreeDictionnaire dictionnaire[], int dim) {
+	EntreeDictionnaire plusLongMot = dictionnaire[0];
+	for (int i = 1; i < dim; i++) {
+		if (dictionnaire[i].mot.size() > plusLongMot.mot.size()) {
+			plusLongMot = dictionnaire[i];
+		}
+	}
+	return plusLongMot;
+}
 
 void dictionnaire() {
 	std::ifstream entree(filePath);
@@ -18,25 +36,21 @@ void dictionnaire() {
 		return;
 	}
 
-	const int MAX_ENTRIES = 100;
-	EntreeDictionnaire dictionnaire[MAX_ENTRIES];
-	int count = 0;
+	EntreeDictionnaire dictionnaire[N_MAX_ENTREE_DIC];
+	int nEntrees = 0;
 	std::string ligne;
 
-	while (std::getline(entree, ligne) && count < MAX_ENTRIES) {
+	while (std::getline(entree, ligne) && nEntrees < N_MAX_ENTREE_DIC) {
 		std::istringstream ss(ligne);
 		EntreeDictionnaire nouvelleDef;
 		if (std::getline(ss, nouvelleDef.mot, '\t') &&
 			std::getline(ss, nouvelleDef.natureGenre, '\t') &&
 			std::getline(ss, nouvelleDef.definition, '\t')) {
-			dictionnaire[count++] = nouvelleDef;
+			dictionnaire[nEntrees++] = nouvelleDef;
 		}
 	}
 
-	for (int i = 0; i < count; ++i) {
-		std::cout << "Mot: " << dictionnaire[i].mot << std::endl;
-		std::cout << "Nature/Genre: " << dictionnaire[i].natureGenre << std::endl;
-		std::cout << "Definition: " << dictionnaire[i].definition << std::endl;
-		std::cout << "-----------------------------------------" << std::endl;
-	}
+	EntreeDictionnaire motPlusLong = trouverMotPlusLong(dictionnaire, nEntrees);
+	std::cout << "Le mot le plus long de ce dictionnair est :" << std::endl;
+	afficherMotDefMot(motPlusLong);
 }
