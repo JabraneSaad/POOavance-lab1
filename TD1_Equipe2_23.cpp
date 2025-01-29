@@ -8,6 +8,6 @@
 #include "exo6.hpp"
 
 int main() {
-	hauteurDeRebond();
+	approximationPi();
 	return 1;
 }
