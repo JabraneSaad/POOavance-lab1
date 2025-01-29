@@ -16,7 +16,6 @@ void afficherMotDefMot(EntreeDictionnaire defMot) {
 	std::cout << "Mot: " << defMot.mot << std::endl;
 	std::cout << "Nature/Genre: " << defMot.natureGenre << std::endl;
 	std::cout << "Definition: " << defMot.definition << std::endl;
-	std::cout << "-----------------------------------------" << std::endl;
 }
 
 EntreeDictionnaire trouverMotPlusLong(EntreeDictionnaire dictionnaire[], int dim) {
