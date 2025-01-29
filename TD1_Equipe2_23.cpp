@@ -9,12 +9,15 @@
 
 
 int main() {
-	int tableau[10] = { 7, 4, 7, 8, 4, 6, 3, 9, 6, 11 };
+	//int tableau[10] = { 7, 4, 7, 8, 4, 6, 3, 9, 6, 11 };
 
 	//nombrePremier();
-	emprunt();
-	
+	//emprunt();
+	//hauteurDeRebond();
+	//approximationPi();
+	//tableauPairImpair(int tableau[10])
 	//tableauPairImpair(tableau);
+	//dictionnaire();
 
 	return 1;
 }

@@ -2,6 +2,8 @@
 Auteurs : Vincent Brunette, Saad Jabrane
 Date : 29 Janvier 2025
 Description du programme :
+	Un programme pour verifier la validite du nombre entree par l'utilisateur
+	programme utilisee par emprunt() et hauteurDeRebond()
 */
 #include <iostream>
 

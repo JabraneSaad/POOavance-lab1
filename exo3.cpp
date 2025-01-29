@@ -12,11 +12,11 @@ Description du programme :
 const float GRAVITE = 9.81;
 
 void hauteurDeRebond() {
-	float hauteurPreRebond = 0;
-	float vitessePreRebond = 0;
-	float vitessePostRebond = 0;
-	float coefficientRebond = 0;
-	float hauteurPostRebond = 0;
+	float hauteurPreRebond = 0.0;
+	float vitessePreRebond = 0.0;
+	float vitessePostRebond = 0.0;
+	float coefficientRebond = 0.0;
+	float hauteurPostRebond = 0.0;
 	int  nRebonds = 0;
 
 	std::cout << "Entrez le nombre de rebonds: ";

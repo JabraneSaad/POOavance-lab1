@@ -2,7 +2,7 @@
 Auteurs : Vincent Brunette, Saad Jabrane
 Date : 29 Janvier 2025
 Description du programme : 
-	Un programme qui calcule ue vlaur approximative de pi par 
+	Un programme qui calcule une valeur approximative de pi par 
 	la methode de Monte-Carlo.
 */
 
@@ -24,7 +24,7 @@ struct Point {
 	double y;
 };
 
-bool pointDansCercle(Point point) {
+bool estDansCercle(Point point) {
 	return ((pow(point.x, 2) + pow(point.y, 2)) < 1);
 }
 
@@ -38,7 +38,7 @@ void approximationPi() {
 	for (int i = 0; i < nIterations; i++) {
 		point.x = genererNombre();
 		point.y = genererNombre();
-		if (pointDansCercle(point)) {
+		if (estDansCercle(point)) {
 			nPointsDansCercle++;
 		}
 	}

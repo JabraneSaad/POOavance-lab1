@@ -14,10 +14,10 @@ Description du programme :
 
 
 void emprunt() {
-	float dette = 0;
-	float tauxInteretMensuel = 0;
-	float remboursement = 0;
-	float sommeInterets = 0;
+	float dette = 0.0;
+	float tauxInteretMensuel = 0.0;
+	float remboursement = 0.0;
+	float sommeInterets = 0.0;
 
 	getValue("Entrez le montant emprunte: ", dette, 0, INFINITY);
 	getValue("Entrez le taux annuel : ", tauxInteretMensuel, 0, 100);
@@ -32,7 +32,7 @@ void emprunt() {
 	}
 	else {
 		int nMois = 1;
-		float interetsMensuels = 0;
+		float interetsMensuels = 0.0;
 		while (remboursement < dette) {
 			interetsMensuels = dette * tauxInteretMensuel;
 			sommeInterets += interetsMensuels;
