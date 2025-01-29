@@ -1,3 +1,10 @@
+/*
+Auteurs : Vincent Brunette, Saad Jabrane
+Date : 29 Janvier 2025
+Description du programme :
+	Un programme qui détermine la hauteur atteinte par une balle en tenant
+	compte de la hauteur initiale et du nombre de rebonds.
+*/
 #include <iostream>
 #include "verifierValeur.hpp"
 

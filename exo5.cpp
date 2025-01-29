@@ -1,6 +1,12 @@
-#include <iostream>
+/*
+Auteurs : Vincent Brunette, Saad Jabrane
+Date : 29 Janvier 2025
+Description du programme :
+	Un programme qui saisit un tableau d’entiers de taille 10 et qui l’affiche de
+	telle sorte que tous les entiers pairs se retrouvent avant les entiers impairs.
+*/
 
-//int tableau[10] = { 7, 4, 7, 8, 4, 6, 3, 9, 6, 11 };
+#include <iostream>
 
 void printTableau(int tableau[10]) {
 	std::cout << "{";
@@ -30,7 +36,7 @@ void  tableauPairImpair(int tableau[10]) {
 		}
 	}
 
-	// optimisation : on a decide d'utiliser le tabelau des pair car les pairs sont deja a gauche
+	// optimisation : on a decide d'utiliser le tabelau des pair car les pairs sont deja en premier
 	int j = 0;
 	for (int i = nNombresPairs; i < 10; i++) {
 		nombresPairs[i] = nombresImpairs[j];

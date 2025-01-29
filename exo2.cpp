@@ -2,8 +2,11 @@
 Auteurs : Vincent Brunette, Saad Jabrane
 Date : 29 Janvier 2025
 Description du programme :
-	Écrivez un programme qui lit du clavier un nombre entier, puis détermine si ce
-	nombre est premier ou non
+	Un programme qui demande et lit du clavier une somme d’argent qui a été 
+	prêtée, le montant remboursé chaque mois, ainsi que le taux d’intérêt 
+	annuel (le taux mensuel est le 1/12 du taux annuel), et retourne le nombre 
+	de mois nécessaires pour rembourser la dette ainsi que la somme des intérêts
+	perçus par le prêteur.
 */
 
 #include <iostream>

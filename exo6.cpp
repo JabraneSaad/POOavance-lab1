@@ -1,3 +1,11 @@
+/*
+Auteurs : Vincent Brunette, Saad Jabrane
+Date : 29 Janvier 2025
+Description du programme :
+	Un programme de traitement de données pour un dictionnaire de format (mot, nature/genre,
+	définition) qui lit d’un fichier et  affiche le mot le plus long du dictionnaire.
+*/
+
 #include <iostream>
 #include <string>
 #include <fstream>
