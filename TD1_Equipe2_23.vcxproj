@@ -133,7 +133,7 @@
     <ClCompile Include="exo4.cpp" />
     <ClCompile Include="exo5.cpp" />
     <ClCompile Include="exo6.cpp" />
-    <ClCompile Include="TD1_Equipe2_23.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="verifierValeur.cpp" />
   </ItemGroup>
   <ItemGroup>

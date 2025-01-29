@@ -16,7 +16,6 @@ int main() {
 	//hauteurDeRebond();
 	//approximationPi();
 	//tableauPairImpair(int tableau[10])
-	//tableauPairImpair(tableau);
 	//dictionnaire();
 
 	return 1;
