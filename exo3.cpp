@@ -2,20 +2,7 @@
 #include "verifierValeur.hpp"
 
 
-const float GRAVITE = 9.81f;
-
-// 3-Rebonds
-float calcVitessePreRebond(float hauteurPreRebond) {
-	return sqrt(2 * GRAVITE * hauteurPreRebond);
-}
-
-float calcVitessePostRebond(float vitessePreRebond, float coefficientRebonds) {
-	return (coefficientRebonds * vitessePreRebond);
-}
-
-float calcHauteurPostRebond(double vitessePostRebond) {
-	return static_cast<float>(pow(vitessePostRebond, 2) / (2 * GRAVITE)); // pour fix l erreur de trunking de double a float
-}
+const float GRAVITE = 9.81;
 
 void hauteurDeRebond() {
 	float hauteurPreRebond = 0;
@@ -32,9 +19,9 @@ void hauteurDeRebond() {
 	getValue("Entrez le coefficient de rebonds : ", coefficientRebond, 0, 1);
 
 	for (int i = nRebonds; i > 0; i--) {
-		vitessePreRebond = calcVitessePreRebond(hauteurPreRebond);
-		vitessePostRebond = calcVitessePostRebond(vitessePreRebond, coefficientRebond);
-		hauteurPostRebond = calcHauteurPostRebond(vitessePostRebond);
+		vitessePreRebond = sqrt(2 * GRAVITE * hauteurPreRebond);
+		vitessePostRebond = coefficientRebond * vitessePreRebond;
+		hauteurPostRebond = pow(vitessePostRebond, 2) / (2 * GRAVITE);
 
 		hauteurPreRebond = hauteurPostRebond;
 		vitessePreRebond = vitessePostRebond;
