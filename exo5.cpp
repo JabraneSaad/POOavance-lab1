@@ -4,36 +4,34 @@ bool estPair(int num) {
 	return num % 2 == 0;
 }
 
-void printTableau(int tab[10]) {
+void printTableau(int tableau[10]) {
 	std::cout << "{";
 	for (int i = 0; i < 10; i++) {
-		std::cout << " " << tab[i] << ",";
+		std::cout << " " << tableau[i] << ",";
 	}
 	std::cout << "}";
 }
 
-void  separerParite(int tableau[10]) {
-	int pairs[10] = {0};
-	int impairs[10] = { 0 };
-	int nPairs = 0;
-	int nImpairs = 0;
+void  tableauPairImpair(int tableau[10]) {
+	int nombresPairs[10] = {0};
+	int nombresImpairs[10] = { 0 };
+	int nNombresPairs = 0;
+	int nNombreImpairs = 0;
 	for (int i = 0; i < 10; i++) {
 		if (estPair(tableau[i])) {
-			pairs[nPairs] = tableau[i];
-			nPairs++;
+			nombresPairs[nNombresPairs] = tableau[i];
+			nNombresPairs++;
 		}
 		else {
-			impairs[nImpairs] = tableau[i];
-			nImpairs++;
+			nombresImpairs[nNombreImpairs] = tableau[i];
+			nNombreImpairs++;
 		}
 	}
-	// par optimisation on utilise le tabelau pair puisque les pairs sont deja a gauche
+	// optimisation : on a decide d'utiliser le tabelau des pair car les pairs sont deja a gauche
 	int j = 0;
-
-	for (int i = nPairs; i < 10; i++) {
-		pairs[i] = impairs[j];
+	for (int i = nNombresPairs; i < 10; i++) {
+		nombresPairs[i] = nombresImpairs[j];
 		j++;
 	}
-	//affichage de tableau
-	printTableau(pairs);
+	printTableau(nombresPairs);
 }

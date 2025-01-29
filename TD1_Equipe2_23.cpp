@@ -8,6 +8,6 @@
 #include "exo6.hpp"
 
 int main() {
-	dictionnaire();
+	emprunt();
 	return 1;
 }
