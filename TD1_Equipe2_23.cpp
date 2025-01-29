@@ -8,6 +8,6 @@
 #include "exo6.hpp"
 
 int main() {
-	emprunt();
+	hauteurDeRebond();
 	return 1;
 }

@@ -10,7 +10,7 @@ void emprunt() {
 	getValue("Entrez le montant emprunte: ", montantEmprunt, 0, INFINITY);
 	getValue("Entrez le taux annuel : ", tauxMensuel, 0, 100);
 
-	tauxMensuel /= 100; //passage en centiemes
+	tauxMensuel /= 100; //passage du pourcentage en centiemes
 	tauxMensuel /= 12;
 
 	getValue("Entrez le paiement mensuel : ", montantRemboursement, 0, INFINITY);
