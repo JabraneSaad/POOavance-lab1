@@ -1,4 +1,4 @@
-# README - INF1015 Travail Dirigé No. 1
+# README - Travail Dirigé No. 1
 
 ## Introduction
 Ce projet illustre la maîtrise des concepts fondamentaux du langage C++, incluant les structures de contrôle, la lecture de fichiers, les tableaux et les structures (`struct`).
@@ -46,7 +46,6 @@ Ce projet illustre la maîtrise des concepts fondamentaux du langage C++, inclua
 ## Auteur
 Développé par **Saad Jabrane** dans le cadre du cours [INF1015](https://www.polymtl.ca/programmes/cours/programmation-orientee-objet-avancee).
 
-## Licence
 
 **Bonne exploration du code !** 🙂
 
